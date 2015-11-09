@@ -1,0 +1,29 @@
+{
+  "name": "personal_portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Darien Lombardi <darien.lombardi@gmail.com>"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gulp": "~3.9.0",
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "jquery": "~2.1.4",
+    "jquery-easing": "*",
+    "font-awesome": "~4.4.0",
+    "animate.css": "~3.4.0",
+    "semantic-ui": "~2.1.6"
+  }
+}
