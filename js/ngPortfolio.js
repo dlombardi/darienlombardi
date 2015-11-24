@@ -2,10 +2,9 @@ var dl = angular.module("dLombardi", []);
 
 dl.controller("dController", ['$scope', function($scope){
   $scope.social = [
-    { link: '#page-top', icon: "images/Darien_Lombardi_Logo_Inverse.png", class:"logo"},
-    { link: 'https://www.linkedin.com/in/darienlombardi', icon: "images/linkedin.svg", class:"social"},
-    { link: 'https://twitter.com/DarienLombardi', icon: "images/twitter.svg", class:"social"},
-    { link: 'https://www.linkedin.com/in/darienlombardi', icon: "images/stackoverflow.svg", class:"social"},
+    { link: 'https://www.linkedin.com/in/darienlombardi', icon: "images/linkedin.svg", class:"social", name: "Linkedin"},
+    { link: 'https://twitter.com/DarienLombardi', icon: "images/twitter.svg", class:"social", name: "twitter"},
+    { link: 'https://www.linkedin.com/in/darienlombardi', icon: "images/stackoverflow.svg", class:"social", name: "stackoverflow"},
   ];
 
   $scope.portfolio = [

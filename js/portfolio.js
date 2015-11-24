@@ -93,4 +93,6 @@ TxtRotate.prototype.tick = function() {
   $('.special.cards .image').dimmer({
   on: 'hover'
   });
+
+  $
 }
