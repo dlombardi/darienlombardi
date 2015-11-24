@@ -24,12 +24,6 @@ function init(){
       });
   });
 
-  $('.card__share > a').on('click', function(e){
-		e.preventDefault() // prevent default action - hash doesn't appear in url
-   		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
-		$(this).toggleClass('share-expanded');
-    });
-
   // Closes the Responsive Menu on Menu Item Click
   $('.navbar-collapse ul li a').click(function() {
       $('.navbar-toggle:visible').click();
@@ -90,9 +84,4 @@ TxtRotate.prototype.tick = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 
-  $('.special.cards .image').dimmer({
-  on: 'hover'
-  });
-
-  $
 }

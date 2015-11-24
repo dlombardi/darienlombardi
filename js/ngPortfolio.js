@@ -11,6 +11,8 @@ dl.controller("dController", ['$scope', function($scope){
     { title:"Calculator", image: "images/Calculator.png", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
     { title:"Weather App", image: "images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
     { title:"Calculator", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
-    { title:"Historic", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]}
+    { title:"Historic", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
+    { title:"Historic", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
+    { title:"Historic", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
   ]
 }]);
