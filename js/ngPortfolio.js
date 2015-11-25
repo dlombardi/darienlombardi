@@ -8,11 +8,11 @@ dl.controller("dController", ['$scope', function($scope){
   ];
 
   $scope.portfolio = [
-    { title:"Calculator", image: "images/Calculator.png", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
-    { title:"Weather App", image: "images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
-    { title:"Calculator", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
-    { title:"Historic", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
-    { title:"Historic", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
-    { title:"Historic", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
+    { title:"Quora", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
+    { title:"Historic", image: "images/Historic.png", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
+    { title:"Record Swap", image: "#", website: "#", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]},
+    { title:"Calculator", image: "images/Calculator.png", website: "http://dlombardi.github.io/Calculator/", techs:["Javascript", "jQuery", "HTML", "CSS"]},
+    { title:"Weather App", image: "images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", techs:["Javascript","Ionic", "Angular","Google Maps Api","Express","Mongo","Mongoose","Scss"]},
+    { title:"Weather App", image: "images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]}
   ]
 }]);

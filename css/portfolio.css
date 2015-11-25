@@ -40,7 +40,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #8AC6BD;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -262,12 +262,13 @@ a:focus {
   padding-top: 100px;
 }
 
-.download-section {
-    height: 100%;
+#about {
+    height: auto;
     width: 100%;
     padding: 50px 0;
-    color: #fff;
-    background-color: #000;
+    color: black;
+    background: no-repeat bottom center scroll;
+    background-color: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -280,7 +281,7 @@ a:focus {
         padding-top: 250px;
     }
 
-    .download-section {
+    #about {
         padding: 100px 0;
     }
 
@@ -449,7 +450,7 @@ svg{
 #portfolio{
   height: auto;
   width: 100%;
-  padding: 100px 0;
+  padding: 75px 0px 75px 0px;
   text-align: center;
   color: black;
   background: no-repeat bottom center scroll;
@@ -466,7 +467,7 @@ svg{
 
 .projectButton{
   padding: 1em;
-  margin-top: 5em;
+  margin-top: 0em;
   width: auto;
 }
 
@@ -620,6 +621,11 @@ svg{
     font-weight: 400;
     line-height: 20px;
 }
+
+.back .content{
+    height: 230px;
+}
+
 .card .profession{
     color: #999999;
     text-align: center;
@@ -685,6 +691,61 @@ svg{
   list-style-type: none;
 }
 
-.gridCard{
+#divider{
+  margin-top: 2em;
+}
 
+
+@media(max-width: 780px) {
+    #divider {
+      display: none;
+    }
+    #about-section{
+      margin-top: 3em;
+    }
+}
+
+#aboutHeader{
+  margin-bottom: 3em;
+  margin-top: -3em;
+}
+
+
+#portfolioHeader{
+  margin-bottom: 3em;
+  margin-top: -3em;
+}
+
+#blog{
+  text-align: left;
+  margin-top: 3em;
+  font-size: 16px;
+}
+
+#block-section{
+  margin-top: 3em;
+  margin-bottom: -2em;
+}
+
+#block-section h4{
+  margin-bottom: -2em;
+}
+
+.blog-entry{
+  display: block;
+  padding-top: 15px;
+  padding-left: 10px;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  transition: .3s;
+  border-bottom: 1px dotted black;
+}
+
+.blog-entry:hover{
+  padding-left: 25px;
+  color: rgba(134, 198, 189, 1);
+  transition-duration: .3s;
+  background-color: rgba(134, 198, 189, 0.2);
 }

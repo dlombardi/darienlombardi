@@ -8,20 +8,20 @@
 
 // jQuery to collapse the navbar on scroll
 
-function init(){
+function init() {
   $(window).scroll(function() {
       ($(".navbar").offset().top > 50) ? $(".navbar-fixed-top").addClass("top-nav-collapse") : $(".navbar-fixed-top").removeClass("top-nav-collapse");
   });
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $(function() {
-      $('a.page-scroll').bind('click', function(event) {
-          var $anchor = $(this);
-          $('html, body').stop().animate({
-              scrollTop: $($anchor.attr('href')).offset().top
-          }, 1500, 'easeInOutExpo');
-          event.preventDefault();
-      });
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
   });
 
   // Closes the Responsive Menu on Menu Item Click
@@ -83,5 +83,8 @@ TxtRotate.prototype.tick = function() {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
+
+  //twitter widget
+
 
 }
