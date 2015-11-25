@@ -15,4 +15,15 @@ dl.controller("dController", ['$scope', function($scope){
     { title:"Weather App", image: "images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", techs:["Javascript","Ionic", "Angular","Google Maps Api","Express","Mongo","Mongoose","Scss"]},
     { title:"Weather App", image: "images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", techs:["Javascript","Ionic","Google Maps Api","express","Mongo","Mongoose","Scss"]}
   ]
+
+  $scope.skills = [
+  { title: 'HTML 5', image: 'img/html.png' },
+  { title: 'CSS 3', image: 'img/css.png' },
+  { title: 'Javascript', image: 'img/javascript.jpg' },
+  { title: 'MongoDB', image: "img/mongodb.png" },
+  { title: 'HapiJS', image: "img/hapi.png" },
+  { title: 'AngularJS', image: "img/angular.png" },
+  { title: 'NodeJS', image: "img/node.png" },
+  { title: 'CoffeeScript', image: 'img/coffeescript.png' }
+]
 }]);

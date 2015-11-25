@@ -784,8 +784,13 @@ svg{
   color: black;
 }
 
+#contact-section{
+  margin-top: -10em;
+}
+
 #comfyMessage{
   color: black;
+  margin-bottom: 2em;
 }
 
 #page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse.in > ul > li> a {
