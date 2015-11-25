@@ -10,7 +10,7 @@
 
 function init() {
 
-  var $animation_elements = [$('#portfolioHeader'), $('#aboutHeader')];
+  var $animation_elements = [$('#portfolioHeader'), $('#aboutHeader'), $('#comfyMessage')];
   var $window = $(window);
 
   $window.on('scroll', check_if_in_view);

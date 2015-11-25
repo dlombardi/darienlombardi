@@ -4,6 +4,7 @@ dl.controller("dController", ['$scope', function($scope){
   $scope.social = [
     { link: 'https://www.linkedin.com/in/darienlombardi', icon: "images/linkedin.svg", class:"social", name: "Linkedin"},
     { link: 'https://twitter.com/DarienLombardi', icon: "images/twitter.svg", class:"social", name: "twitter"},
+    { link: 'https://github.com/dlombardi', icon: "images/github.svg", class:"social", name: "stackoverflow"},
     { link: 'https://www.linkedin.com/in/darienlombardi', icon: "images/stackoverflow.svg", class:"social", name: "stackoverflow"},
   ];
 
