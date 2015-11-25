@@ -23,43 +23,35 @@
 </head>
 
 <body ng-cloak ng-app="dLombardi" ng-controller="dController" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-            <ul class="list-inline">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                  <i class="fa fa-bars"></i>
-              </button>
-              <a class="navbar-brand page-scroll" href="#page-top">
-                  <img class="logo" src="images/Darien_Lombardi_Logo_Inverse.png">
-              </a>
-            </ul>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-              <ul class="nav navbar-nav">
-                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                  <li class="hidden">
-                      <a href="#page-top"></a>
-                  </li>
-                  <li>
-
-                      <a class="page-scroll" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="#about">About</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+    <div class="container">
+      <div class="navbar-header">
+        <ul class="list-inline">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+              <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">
+              <img class="logo" src="images/Darien_Lombardi_Logo_Inverse.png">
+          </a>
+        </ul>
       </div>
-      <!-- /.container -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+              <li class="hidden">
+                  <a href="#page-top"></a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#about">About</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+    </div>
   </nav>
 
   <!-- Intro Header -->
@@ -86,7 +78,7 @@
                     <span
                       class="interests txt-rotate"
                       data-period="500"
-                      data-rotate='[ "Node.", "Javascript.", "Express.", "Angular.", "Mongo.", "Gulp." ]'>
+                      data-rotate='[ "Node.", "Javascript.", "Express.", "Angular.", "Mongo.", "Gulp."]'>
                     </span>
                   </h1>
                 </div>
@@ -116,7 +108,7 @@
   <section id="portfolio" class="container-fluid content-section">
     <div id="portfolioHeader" class="row">
       <div class="col-sm-10 col-sm-offset-1">
-        <h1>Portfolio</h1>
+        <h1 id="portfolioTitle" class="">Portfolio</h1>
       </div>
     </div>
     <div class="row">
@@ -167,18 +159,37 @@
   </section>
 
   <!-- Download Section -->
-
   <section id="about" class="container-fluid content-section text-center">
     <div id="aboutHeader" class="row">
       <div class="col-sm-10 col-sm-offset-1">
-        <h1>About Me</h1>
+        <h1 id="aboutTitle" class="">About Me</h1>
       </div>
     </div>
     <div class="row">
-      <div id="" class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-10 col-sm-offset-1">
         <div class="col-lg-5">
           <div id="about-section">
             <h4>Who I Am</h4>
+            <div class="row about-text">
+              <img id="" src="" alt="">
+              <p>----</p>
+              <p class="description">I grew up in Chapel Hill, North Carolina with the privilage of being around the best basketball and barbecue in the world. I spent my college years in Boston, Massachusetts surrounding myself with my passions of art, technology, and music. I am a Full-stack Javascript Developer
+                living and breathing software development in an immersive live-in coding bootcamp
+                located in Silicon Valley. My mission is to design functional and
+                elegant user experiences for the web. </p>
+              <p>----</p>
+            </div>
+            <div id="resume">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Resume</button>
+
+              <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <embed src="images/Lombardi_Resume_2015.pdf" width="600" height="700" type='application/pdf'>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-2 text-center">
@@ -218,11 +229,26 @@
 
   <!-- Contact Section -->
   <section id="contact" class="container content-section text-center">
-      <div class="row">
-          <div class="col-lg-12">
-
+    <h1 id="comfyMessage">Don't be shy, Reach out!</h1>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input ng-model="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email">
           </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Title</label>
+            <input ng-model="title" type="text" class="form-control" id="exampleInputEmail1" placeholder="Title">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Message</label>
+            <textarea name="message" class="form-control" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          </div>
+          <button ng-click="sendEmail(user)" class="btn btn-default">Send It</button>
+        </form>
       </div>
+    </div>
   </section>
 
 
@@ -232,7 +258,6 @@
   <script src="app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="app/bower_components/angular/angular.min.js"></script>
   <script src="app/bower_components/jquery-easing/jquery.easing.min.js"></script>
-  <script src="app/bower_components/semantic-ui/dist/semantic.min.js"></script>
 
   <!-- Custom Theme JavaScript -->
   <script src="js/ngPortfolio.js"></script>

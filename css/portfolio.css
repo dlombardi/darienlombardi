@@ -75,7 +75,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: black;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -95,12 +95,13 @@ a:focus {
 }
 
 .navbar-custom .nav li a:hover {
+    text-decoration: none;
     outline: 0;
     color: #FF5500;
     text-decoration: underline;
-    -webkit-text-decoration-color: #FFAA01;
-    -moz-text-decoration-color: #FFAA01;  /* vendor prefix not required as of V36 */
-    text-decoration-color: #FFAA01;
+    -webkit-text-decoration-color: #FF5500;
+    -moz-text-decoration-color: #FF5500;  /* vendor prefix not required as of V36 */
+    text-decoration-color: #FF5500;
     background-color: transparent;
 }
 
@@ -115,11 +116,13 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
+    text-decoration: none;
     background-color: rgba(255,255,255,.3);
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    text-decoration: none;
+    color: #FF5500;
 }
 
 @media(min-width:768px) {
@@ -696,7 +699,7 @@ svg{
 }
 
 
-@media(max-width: 780px) {
+@media(max-width: 1200px) {
     #divider {
       display: none;
     }
@@ -710,10 +713,17 @@ svg{
   margin-top: -3em;
 }
 
+#aboutTitle{
+
+}
 
 #portfolioHeader{
   margin-bottom: 3em;
   margin-top: -3em;
+}
+
+#portfolioTitle{
+
 }
 
 #blog{
@@ -748,4 +758,44 @@ svg{
   color: rgba(134, 198, 189, 1);
   transition-duration: .3s;
   background-color: rgba(134, 198, 189, 0.2);
+}
+
+#portrait-profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#resume button{
+  background-color: #FF5500;
+  border: none;
+}
+
+#resume button:hover{
+  background-color: #b54006;
+  border: none;
+}
+
+#contact{
+  height: auto;
+  background-color: #E7E7E7;
+  width: auto;
+  padding-bottom: 20em;
+  color: black;
+}
+
+#comfyMessage{
+  color: black;
+}
+
+#page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse.in > ul > li> a {
+  color: white;
+}
+
+#page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse.in > ul > li> a:focus {
+  color: white;
+}
+
+#page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse > ul > li > a {
+  text-decoration: none;
 }

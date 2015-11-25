@@ -23,7 +23,6 @@
     "jquery": "~2.1.4",
     "jquery-easing": "*",
     "font-awesome": "~4.4.0",
-    "animate.css": "~3.4.0",
-    "semantic-ui": "~2.1.6"
+    "animate.css": "~3.4.0"
   }
 }
