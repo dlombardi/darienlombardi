@@ -22,11 +22,12 @@ function init() {
   });
 
   function check_if_in_view() {
+    var increment = 0;
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
 
-    $.each($animation_elements, function() {
+    $.each($animation_elements, function(index) {
       var $element = $(this);
       var element_height = $element.outerHeight();
       var element_top_position = $element.offset().top;
@@ -35,9 +36,9 @@ function init() {
       //check to see if this current container is within viewport
       if ((element_bottom_position >= window_top_position) &&
           (element_top_position <= window_bottom_position)) {
-        $element.addClass('animated fadeInLeft');
+        index % 2 === 0 ? $element.addClass('animated fadeInLeft') :  $element.addClass('animated fadeInRight');
       } else {
-        $element.removeClass('animated FadeInLeft');
+        $element.removeClass('animated FadeInRight');
       }
     });
   }
