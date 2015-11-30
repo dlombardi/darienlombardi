@@ -48,6 +48,7 @@ dl.controller("dController", ['$scope', '$http', function($scope, $http){
       $scope.email = "";
       $scope.title = "";
       $scope.content = "";
+      $scope.emailForm.$setUntouched();
     })
   }
 }]);
