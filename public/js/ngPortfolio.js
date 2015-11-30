@@ -38,7 +38,16 @@ dl.controller("dController", ['$scope', '$http', function($scope, $http){
     }
     $http.post('email', email)
     .success(function(email){
-      console.log(email);
+      swal({
+        type: "success",
+        title: "Email sent!",
+        timer: 1000,
+        showConfirmButton: false
+      });
+      $scope.sender = "";
+      $scope.email = "";
+      $scope.title = "";
+      $scope.content = "";
     })
   }
 }]);
