@@ -9,12 +9,12 @@ dl.controller("dController", ['$scope', '$http', function($scope, $http){
   ];
 
   $scope.portfolio = [
-    { title:"Quora", image: "/public/images/quora.png", website: "https://blooming-dusk-5310.herokuapp.com/", techs:["Node","Javascript","Angular","Express","Mongoose","Scss","Gulp", "Mixpanel", "Passport","Foundation"]},
-    { title:"Historic", image: "/public/images/Historic.png", website: "https://radiant-island-9611.herokuapp.com/#/app/map", techs:["Node","Javascript","Ionic","Google Maps Api","Express","Mongo","Mongoose","Scss","Gulp"]},
-    { title:"Record Swap", image: "/public/images/record_swap.png", website: "#", techs:["Node","Javascript","Ionic","Express","Mongo","Mongoose","Scss"]},
-    { title:"PocketWatch", image: "/public/images/pocket_watch.png", website: "http://www.pocketwatchapp.us/#/home", techs:["Javascript","Twilio", "Weather Underground API","Express","HTML", "CSS"]},
-    { title:"Weather App", image: "/public/images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", techs:["Javascript","jQuery", "Weather Underground API","Bootstrap","HTML","CSS"]},
-    { title:"Calculator", image: "/public/images/Calculator.png", website: "http://dlombardi.github.io/Calculator/", techs:["Javascript", "jQuery", "Bootstrap", "HTML", "CSS"]}
+    { title:"Quora", image: "/public/images/quora.png", website: "https://blooming-dusk-5310.herokuapp.com/", github: "https://github.com/dlombardi/Quora_clone" ,techs:["Node","Javascript","Angular","Express","Mongoose","Scss","Gulp", "Mixpanel", "Passport","Foundation"]},
+    { title:"Historic", image: "/public/images/Historic.png", website: "https://radiant-island-9611.herokuapp.com/#/app/map", github: "https://github.com/dlombardi/historic" ,techs:["Node","Javascript","Ionic","Google Maps Api","Express","Mongo","Mongoose","Scss","Gulp"]},
+    { title:"Record Swap", image: "/public/images/record_swap.png", website: "#", github: "https://github.com/dlombardi/recordSwap" ,techs:["Node","Javascript","Ionic","Express","Mongo","Mongoose","Scss"]},
+    { title:"PocketWatch", image: "/public/images/pocket_watch.png", website: "http://www.pocketwatchapp.us/#/home", github: "https://github.com/dlombardi/pocketwatchapp", techs:["Javascript","Twilio", "Weather Underground API","Express","HTML", "CSS"]},
+    { title:"Weather App", image: "/public/images/WeatherApp.png", website: "http://dlombardi.github.io/Weather-on-the-Run/", github: "https://github.com/dlombardi/Weather-on-the-Run",techs:["Javascript","jQuery", "Weather Underground API","Bootstrap","HTML","CSS"]},
+    { title:"Calculator", image: "/public/images/Calculator.png", website: "http://dlombardi.github.io/Calculator/", github: "https://github.com/dlombardi/Calculator",techs:["Javascript", "jQuery", "Bootstrap", "HTML", "CSS"]}
   ]
 
     $scope.skills = [
