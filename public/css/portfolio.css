@@ -265,12 +265,6 @@ a:focus {
   height: 50px;
 }
 
-@media(max-width: 765px) {
-    #text-cycle{
-      margin-bottom: 100px;
-    }
-}
-
 #icons{
   padding-bottom: 2em;
 }
@@ -854,6 +848,15 @@ svg{
     }
     #blog-section{
       margin-bottom: 3em;
+    }
+    #blog{
+      font-size: 15px;
+    }
+    #text-cycle{
+      margin-bottom: 100px;
+    }
+    .card .name{
+      font-size: 15px;
     }
 }
 
