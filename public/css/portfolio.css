@@ -164,6 +164,7 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
+    margin-top: 50px;
     font-size: 40px;
 }
 
@@ -260,6 +261,16 @@ a:focus {
     }
 }
 
+#text-cycle{
+  height: 50px;
+}
+
+@media(max-width: 765px) {
+    #text-cycle{
+      margin-bottom: 100px;
+    }
+}
+
 #icons{
   padding-bottom: 2em;
 }
@@ -321,16 +332,15 @@ a:focus {
     width: 100px;
     height: 50px;
     border: 1px solid #E7E7E7;
-    color: #FF5500;
-    background-color: transparent;
+    color: white;
+    background-color: rgba(134, 198, 189, 1);
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #FF5500;
     outline: 0;
     color: white;
-    background-color: #FF5500;
+    background-color: #5F8C86;
 }
 
 ul.banner-social-buttons {
@@ -634,7 +644,7 @@ svg{
     height: 100%;
 }
 .card .name {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
     margin: 10px 0 0;
     text-align: center;
@@ -792,8 +802,7 @@ svg{
 }
 
 .errorMessage{
-  width: 25%;
-  margin:0 auto;
+  width: 100%;
   margin-top: 2px;
   background-color: white;
   border-radius: 5px;
@@ -802,7 +811,7 @@ svg{
 .errorMessage p{
   padding-top: 2px;
   font-size: 15px;
-  color: #FF5501;
+  color: red;
 }
 
 
@@ -859,4 +868,8 @@ svg{
 
 #page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse > ul > li > a {
   text-decoration: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
