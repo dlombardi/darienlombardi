@@ -488,6 +488,10 @@ svg{
   -o-background-size: cover;
 }
 
+#portfolioTitle{
+  margin-top: 20px;
+}
+
 .projects{
   margin-top: 30px;
 }
