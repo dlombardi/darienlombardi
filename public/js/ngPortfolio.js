@@ -5,7 +5,7 @@ dl.controller("dController", ['$scope', '$http', function($scope, $http){
     { link: 'https://www.linkedin.com/in/darienlombardi', icon: "/public/images/linkedin.svg", class:"social", name: "Linkedin"},
     { link: 'https://twitter.com/DarienLombardi', icon: "/public/images/twitter.svg", class:"social", name: "twitter"},
     { link: 'https://github.com/dlombardi', icon: "/public/images/github.svg", class:"social", name: "stackoverflow"},
-    { link: 'https://www.linkedin.com/in/darienlombardi', icon: "/public/images/stackoverflow.svg", class:"social", name: "stackoverflow"},
+    { link: 'http://stackoverflow.com/users/5095918/darien-lombardi', icon: "/public/images/stackoverflow.svg", class:"social", name: "stackoverflow"},
   ];
 
   $scope.portfolio = [
