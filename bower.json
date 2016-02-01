@@ -24,6 +24,7 @@
     "jquery-easing": "*",
     "font-awesome": "~4.4.0",
     "animate.css": "~3.4.0",
-    "angular-messages": "~1.4.8"
+    "angular-messages": "~1.4.8",
+    "ngSmoothScroll": "~2.0.0"
   }
 }

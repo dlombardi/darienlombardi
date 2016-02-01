@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
  $(document).ready(init)
 
@@ -17,7 +12,7 @@ function init() {
   $window.on('scroll resize', check_if_in_view);
   $window.trigger('scroll');
 
-  $window .scroll(function() {
+  $window.scroll(function() {
     ($(".navbar").offset().top > 50) ? $(".navbar-fixed-top").addClass("top-nav-collapse") : $(".navbar-fixed-top").removeClass("top-nav-collapse");
   });
 
