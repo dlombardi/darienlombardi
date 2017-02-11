@@ -17,7 +17,6 @@ router.post('/email', function(req,res,next){
     text: "from " + req.body.sender + " at " + req.body.email + "\n" + req.body.content
   };
   mailgun.messages().send(data, function (error, body) {
-    console.log("body: ",body);
     res.send(body);
   });
 });
