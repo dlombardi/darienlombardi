@@ -9,6 +9,7 @@ dl.controller("dController", ['$scope', '$http', function($scope, $http){
   ];
 
   $scope.portfolio = [
+    { title:"Cookin", image: "/public/images/cookin.png", website: "https://www.trycookin.com", techs:["React", "Redux", "Docker", "Django", "Flexbox"]},
     { title:"Clear Old Hashes Plugin", image: "/public/images/webpack-plugin.png", website: "https://www.npmjs.com/package/clear-old-hashes-plugin", github: "https://github.com/dlombardi/clear-old-hashes-plugin" ,techs:["Node","Javascript", "Webpack"]},
     { title:"Space Simulator", image: "/public/images/space-simulator.png", website: "https://dlombardi.github.io/space-simulator/", github: "https://github.com/dlombardi/space-simulator" ,techs:["Node","Javascript","HTML5 Canvas"]},
     { title:"VINBeam website", image: "/public/images/Vinbeam.png", website: "http://www.vinbeam.com/", github: "https://github.com/dlombardi/Quora_clone" ,techs:["Node","Javascript","Bootstrap","Angular","Express","Scss","Gulp"]},
