@@ -130,13 +130,16 @@
                         <div class="row">
                           <div class="main">
                             <h5>technologies</h5>
-                            <li class="tech" ng-repeat="tech in project.techs">{{tech}}</li>
+                            <li class="tech" ng-repeat="tech in project.techs track by $index">{{tech}}</li>
                           </div>
                         </div>
                       </div>
                       <div class="footer">
-                          <div class="social-links text-center">
-                              <a href="{{project.github}}" target="_blank" class="github"><i class="fa fa-github fa-fw"></i></a>
+                          <div ng-if="project.github" class="social-links text-center">
+                              <a href="{{project.github}}" target="_blank" class="github">View Code</a>
+                          </div>
+                          <div ng-if="!project.github" class="social-links text-center">
+                              <span>Code is not open source</span>
                           </div>
                       </div>
                   </div> <!-- end back panel -->
